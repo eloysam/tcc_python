@@ -9,12 +9,12 @@ if 5 > 6:
 else:
     print('6 é maior')
 
-n = 3
+n = int(input('Digite um valor:'))
 
-if n == 4:
-    print('n = 4')
+if n % 2 == 0:
+    print(n, 'é par!')
 else:
-    if n == 3:
-        print('n é igual a 3')
+    if n % 3 == 0:
+        print(n, 'é divisível por 3')
     else:
-        print('n != 3 && n!= 4')
+        print('Tente outra vez!')
