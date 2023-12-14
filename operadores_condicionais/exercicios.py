@@ -1,11 +1,19 @@
 # IDENTIFICANDO FAMÍLIAS TAXONÔMICAS
 
 nome_plantas = str(input('Digite o nome de uma família de plantas:'))
-# nome_animais = str(input('Digite o nome de uma família de animais:'))
+nome_animais = str(input('Digite o nome de uma família de animais:'))
 
 ini = nome_plantas.find('ace')
 fim = nome_plantas.find(' ')
 P_nome = nome_plantas[ini:fim]
-#nome_animais.find('idae')
+ini2 = nome_animais.find('ida')
+fim2 = nome_plantas.find(' ')
+A_nome = nome_animais[ini2:fim2]
 
+if nome_plantas[ini:fim] == 'acea':
+    print(nome_plantas, 'pertence á Família de plantas!')
+if nome_animais[ini2:fim2]:
+    print(nome_animais, 'pertence á Família dos animais!')
+else:
+    print('Táxon não-identificado')
 
