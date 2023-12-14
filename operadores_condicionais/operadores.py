@@ -24,7 +24,7 @@ else:
 x = int(input('Digite um valor inteiro:'))
 y = int(input('Digite um valor inteiro:'))
 
-if (x != 0) and (y % 2 == 0):
+if (x != 0) or (y % 2 == 0):
     print('O valor somado é:', x + y)
 else:
     print('O valor subtraído é:', x - y)
