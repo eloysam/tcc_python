@@ -31,3 +31,7 @@ while numero < 6:
     numero += 1
 print('Dentro do while:',soma)
 print('Fora do while:',normal)
+
+numero = 17
+while numero < 1 or numero > 10: # é últil para validação
+    numero = int(input('Digite um número de 1 a 10:'))
